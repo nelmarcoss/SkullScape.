@@ -55,3 +55,22 @@ img {
 .texto-centrado {
     text-align: center;
 }
+
+/** Header **/
+.header {
+    background-color: var(--negro);
+    padding: calc( var(--separacion) * 3 ) 0;
+    color: var(--blanco);
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
