@@ -72,7 +72,7 @@ img {
 }
 
 .header img {
-    width: 100%;
+    width: 1000%;
     height: auto;
 }
 
@@ -118,7 +118,7 @@ img {
     margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .nombre-producto {
         font-size: 8.5rem;
         line-height: 1;
@@ -135,7 +135,7 @@ img {
 .iconos {
     padding: var(--separacion) 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .iconos {
         display: flex;
         gap: 2rem;
@@ -151,7 +151,7 @@ img {
     margin:0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .icono {
         margin:0;
     }
@@ -176,7 +176,7 @@ margin-top: calc( var(--separacion) / 2) ;
     background-size: 100%, 120rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .sobre-skull {
         background-image: linear-gradient( to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
         background-repeat: repeat, no-repeat;
@@ -195,7 +195,7 @@ margin-top: calc( var(--separacion) / 2) ;
     row-gap: var(--separacion);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .sobre-skull-grid {
         grid-template-rows: unset;
         row-gap: unset;
@@ -214,7 +214,7 @@ margin-top: calc( var(--separacion) / 2) ;
     padding-bottom: var(--separacion);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .texto-sobre-skull {
         padding-bottom: 0;
         margin-right: 6rem;
