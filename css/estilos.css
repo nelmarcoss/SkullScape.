@@ -77,6 +77,12 @@ img {
 }
 
 @media (min-width: 768px) {
+    .header img {
+        width: 87%;
+    }
+}
+
+@media (min-width: 768px) {
     .contenido-header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -224,6 +230,7 @@ margin-top: calc( var(--separacion) / 2) ;
 .texto-sobre-skull p {
     font-size: 2rem;
     line-height: 2;
+    margin-bottom: 3.5rem;
 }
 
 /** Modelos **/
