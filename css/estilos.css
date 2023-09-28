@@ -126,7 +126,9 @@ img {
 
 
 /** Iconos **/
-
+.iconos {
+    padding: var(--separacion) 0;
+}
 @media (min-width: 768px) {
     .iconos {
         display: flex;
@@ -136,6 +138,17 @@ img {
 
 .icono {
     text-align: center;
+    margin-bottom: calc( var(--separacion) / 2);
+}
+
+.icono:last-of-type {
+    margin:0;
+}
+
+@media (min-width: 768px) {
+    .icono {
+        margin:0;
+    }
 }
 
 .icono img {
@@ -149,3 +162,66 @@ text-transform: uppercase;
 margin-top: calc( var(--separacion) / 2) ;
 }
 
+/** Sobre SkullScape. **/
+.sobre-skull {
+    background-image: linear-gradient( to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+    background-position: right;
+    background-repeat: repeat, no-repeat;
+    background-size: 100%, 110rem;
+}
+
+@media (min-width: 768px) {
+    .sobre-skull {
+        background-image: linear-gradient( to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+        background-repeat: repeat, no-repeat;
+    }
+}
+
+@media (min-width: 1600px) {
+    .sobre-skull {
+        background-size: 100%, 210rem;
+    }
+}
+
+.sobre-skull-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 40rem);
+    row-gap: var(--separacion);
+}
+
+@media (min-width: 768px) {
+    .sobre-skull-grid {
+        grid-template-rows: unset;
+        row-gap: unset;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        padding: calc( var(--separacion) * 2);
+    }
+}
+
+.texto-sobre-skull {
+    grid-row: 2/3;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: var(--separacion);
+}
+
+@media (min-width: 768px) {
+    .texto-sobre-skull {
+        padding-bottom: 0;
+        margin-right: 5rem;
+    }
+}
+
+.texto-sobre-skull h2 {
+    font-size: 4rem;
+    margin: 0;
+    margin-top: 7rem;
+}
+
+.texto-sobre-skull p {
+    font-size: 2rem;
+    line-height: 2;
+}
